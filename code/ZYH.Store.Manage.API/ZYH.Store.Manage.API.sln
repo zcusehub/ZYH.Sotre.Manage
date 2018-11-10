@@ -5,7 +5,13 @@ VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.WebAPI", "ZYH.Store.Manage.WebAPI\ZYH.Store.Manage.WebAPI.csproj", "{3851D54A-D528-4AFB-B038-37BBE1F1E21A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.Web", "ZYH.Store.Manage.Web\ZYH.Store.Manage.Web.csproj", "{C2032F90-2800-4EBE-BEC1-7091AA163EF8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.Web", "ZYH.Store.Manage.Web\ZYH.Store.Manage.Web.csproj", "{C2032F90-2800-4EBE-BEC1-7091AA163EF8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.Entity", "ZYH.Store.Manage.Entity\ZYH.Store.Manage.Entity.csproj", "{B964B629-8773-4798-BD0A-250ADDF6E726}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Common", "ZYH.Common\ZYH.Common.csproj", "{A3ADD689-4861-45E1-913F-8398A741A7A9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.Dao", "ZYH.Store.Manage.Dao\ZYH.Store.Manage.Dao.csproj", "{B933EEA8-1437-4ECE-885F-C6D3169A2431}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +27,18 @@ Global
 		{C2032F90-2800-4EBE-BEC1-7091AA163EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C2032F90-2800-4EBE-BEC1-7091AA163EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C2032F90-2800-4EBE-BEC1-7091AA163EF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B964B629-8773-4798-BD0A-250ADDF6E726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B964B629-8773-4798-BD0A-250ADDF6E726}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B964B629-8773-4798-BD0A-250ADDF6E726}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B964B629-8773-4798-BD0A-250ADDF6E726}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3ADD689-4861-45E1-913F-8398A741A7A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3ADD689-4861-45E1-913F-8398A741A7A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3ADD689-4861-45E1-913F-8398A741A7A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3ADD689-4861-45E1-913F-8398A741A7A9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B933EEA8-1437-4ECE-885F-C6D3169A2431}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B933EEA8-1437-4ECE-885F-C6D3169A2431}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B933EEA8-1437-4ECE-885F-C6D3169A2431}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B933EEA8-1437-4ECE-885F-C6D3169A2431}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
