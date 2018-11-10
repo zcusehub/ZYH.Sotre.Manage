@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace ZYH.Common
+namespace ZYH.Store.Manage.DAL
 {
     public class Class1
     {

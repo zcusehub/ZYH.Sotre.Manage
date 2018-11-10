@@ -1,0 +1,10 @@
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\bin\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.deps.json
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\bin\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.runtimeconfig.json
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\bin\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.runtimeconfig.dev.json
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\bin\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\bin\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.pdb
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.csproj.CoreCompileInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.AssemblyInfoInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.AssemblyInfo.cs
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.pdb

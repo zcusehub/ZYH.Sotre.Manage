@@ -1,0 +1,9 @@
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\bin\Debug\netstandard2.0\ZYH.Common.deps.json
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\bin\Debug\netstandard2.0\ZYH.Common.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\bin\Debug\netstandard2.0\ZYH.Common.pdb
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\obj\Debug\netstandard2.0\ZYH.Common.csprojAssemblyReference.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\obj\Debug\netstandard2.0\ZYH.Common.csproj.CoreCompileInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\obj\Debug\netstandard2.0\ZYH.Common.AssemblyInfoInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\obj\Debug\netstandard2.0\ZYH.Common.AssemblyInfo.cs
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\obj\Debug\netstandard2.0\ZYH.Common.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Common\obj\Debug\netstandard2.0\ZYH.Common.pdb

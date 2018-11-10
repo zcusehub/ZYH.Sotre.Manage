@@ -1,0 +1,8 @@
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.BLL\bin\Debug\netstandard2.0\ZYH.Store.Manage.BLL.deps.json
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.BLL\bin\Debug\netstandard2.0\ZYH.Store.Manage.BLL.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.BLL\bin\Debug\netstandard2.0\ZYH.Store.Manage.BLL.pdb
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.BLL\obj\Debug\netstandard2.0\ZYH.Store.Manage.BLL.csproj.CoreCompileInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.BLL\obj\Debug\netstandard2.0\ZYH.Store.Manage.BLL.AssemblyInfoInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.BLL\obj\Debug\netstandard2.0\ZYH.Store.Manage.BLL.AssemblyInfo.cs
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.BLL\obj\Debug\netstandard2.0\ZYH.Store.Manage.BLL.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.BLL\obj\Debug\netstandard2.0\ZYH.Store.Manage.BLL.pdb
