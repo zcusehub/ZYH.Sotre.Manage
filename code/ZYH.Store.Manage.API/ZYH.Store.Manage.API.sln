@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Common", "ZYH.Common\ZY
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.Dao", "ZYH.Store.Manage.Dao\ZYH.Store.Manage.Dao.csproj", "{B933EEA8-1437-4ECE-885F-C6D3169A2431}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.BLL", "ZYH.Store.Manage.BLL\ZYH.Store.Manage.BLL.csproj", "{2E560256-B76C-42FC-A8F0-F2D2589107EF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{B933EEA8-1437-4ECE-885F-C6D3169A2431}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B933EEA8-1437-4ECE-885F-C6D3169A2431}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B933EEA8-1437-4ECE-885F-C6D3169A2431}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E560256-B76C-42FC-A8F0-F2D2589107EF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E560256-B76C-42FC-A8F0-F2D2589107EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E560256-B76C-42FC-A8F0-F2D2589107EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E560256-B76C-42FC-A8F0-F2D2589107EF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
