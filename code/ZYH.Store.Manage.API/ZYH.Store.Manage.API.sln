@@ -7,24 +7,31 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.WebAPI", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.Web", "ZYH.Store.Manage.Web\ZYH.Store.Manage.Web.csproj", "{C2032F90-2800-4EBE-BEC1-7091AA163EF8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.Entity", "ZYH.Store.Manage.Entity\ZYH.Store.Manage.Entity.csproj", "{B964B629-8773-4798-BD0A-250ADDF6E726}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.Entity", "ZYH.Store.Manage.Entity\ZYH.Store.Manage.Entity.csproj", "{B964B629-8773-4798-BD0A-250ADDF6E726}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Common", "ZYH.Common\ZYH.Common.csproj", "{A3ADD689-4861-45E1-913F-8398A741A7A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Common", "ZYH.Common\ZYH.Common.csproj", "{A3ADD689-4861-45E1-913F-8398A741A7A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.BLL", "ZYH.Store.Manage.BLL\ZYH.Store.Manage.BLL.csproj", "{2E560256-B76C-42FC-A8F0-F2D2589107EF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.BLL", "ZYH.Store.Manage.BLL\ZYH.Store.Manage.BLL.csproj", "{2E560256-B76C-42FC-A8F0-F2D2589107EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.DAL", "ZYH.Store.Manage.DAL\ZYH.Store.Manage.DAL.csproj", "{6D747CBD-CC92-47E6-BEDA-EB0157F7635A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.DAL", "ZYH.Store.Manage.DAL\ZYH.Store.Manage.DAL.csproj", "{6D747CBD-CC92-47E6-BEDA-EB0157F7635A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.Store.Manage.Test", "ZYH.Store.Manage.Test\ZYH.Store.Manage.Test.csproj", "{33BCC03A-B7B2-4296-A016-394520C1DD59}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.Test", "ZYH.Store.Manage.Test\ZYH.Store.Manage.Test.csproj", "{33BCC03A-B7B2-4296-A016-394520C1DD59}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ExternalModule", "ExternalModule", "{711544D7-9CD3-414D-8589-D21D932B7EBD}"
 	ProjectSection(SolutionItems) = preProject
 		ExternalModule\Record.txt = ExternalModule\Record.txt
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.External.WenXin", "ZYH.External.WenXin\ZYH.External.WenXin.csproj", "{92ACF6AD-526E-4BF1-809F-051DC3B5B623}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.External.WenXin", "ZYH.External.WenXin\ZYH.External.WenXin.csproj", "{92ACF6AD-526E-4BF1-809F-051DC3B5B623}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZYH.External.MeiTuan", "ZYH.External.MeiTuan\ZYH.External.MeiTuan.csproj", "{F67D2D93-13AE-4A9E-B38A-F77903DB8220}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.External.MeiTuan", "ZYH.External.MeiTuan\ZYH.External.MeiTuan.csproj", "{F67D2D93-13AE-4A9E-B38A-F77903DB8220}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyDoc", "MyDoc", "{99C93DFA-800B-456E-9564-81BFE5AA86CD}"
+	ProjectSection(SolutionItems) = preProject
+		MyDoc\NETCoreEFRecord.docx = MyDoc\NETCoreEFRecord.docx
+		MyDoc\NETCoreRecord.docx = MyDoc\NETCoreRecord.docx
+		MyDoc\门店管理系统记录.docx = MyDoc\门店管理系统记录.docx
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
