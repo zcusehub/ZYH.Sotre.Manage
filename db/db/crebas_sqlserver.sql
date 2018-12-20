@@ -1,8 +1,8 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2008                    */
-/* Created on:     2018/11/10 11:41:58                          */
+/* Created on:     2018/12/20 11:30:23                          */
 /*==============================================================*/
-
+ 
 
 if exists (select 1
    from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
@@ -567,7 +567,7 @@ go
 /*==============================================================*/
 create table Organization.Department (
    DepartmentGUID       char(36)             collate Chinese_PRC_CI_AS not null,
-   DepartmentName       national varchar(20) collate Chinese_PRC_CI_AS null,
+   DepartmentName       varchar(20)          collate Chinese_PRC_CI_AS null,
    ParentDepartmentGUID char(36)             collate Chinese_PRC_CI_AS null,
    DepartmentType       tinyint              null,
    Deleted              bit                  null,
@@ -879,7 +879,7 @@ create table Organization.DepartmentRole (
    DepartmentRoleGUID   char(36)             collate Chinese_PRC_CI_AS not null,
    DepartmentGUID       char(36)             collate Chinese_PRC_CI_AS null,
    RoleGUID             char(36)             collate Chinese_PRC_CI_AS null,
-   RoleName             varcahr(32)          null,
+   RoleName             varchar(32)          null,
    Enabled              bit                  null,
    constraint PK_DepartmentRole primary key nonclustered (DepartmentRoleGUID)
 )
@@ -1469,7 +1469,7 @@ create table Finance.FlowingCapital (
    FlowingCapitalType   int                  null,
    RecordType           int                  null,
    ApplyUserID          int                  null,
-   RecordTime           datatime             null,
+   RecordTime           datetime             null,
    Amount               money                null,
    Remark               varchar(256)         null,
    SourceID             int                  null,
@@ -1648,9 +1648,9 @@ create table Finance.FlowingCapitalItem (
    FlowingCapitalID     int                  null,
    RecordItemType       int                  null,
    Amount               money                null,
-   BeginTime            datatime             null,
-   Endtime              datatime             null,
-   RecordTime           datatime             null,
+   BeginTime            datetime             null,
+   Endtime              datetime             null,
+   RecordTime           datetime             null,
    Remark               varchar(256)         null,
    constraint PK_FLOWINGCAPITALITEM primary key (FlowingCapitalItemID)
 )

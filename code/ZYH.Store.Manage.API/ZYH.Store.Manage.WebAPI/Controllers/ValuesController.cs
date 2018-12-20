@@ -21,25 +21,30 @@ namespace ZYH.Store.Manage.WebAPI.Controllers
         [HttpGet("{id}")]
         public ActionResult<string> Get(int id)
         {
-            return "value";
+            string heads = string.Join(',', HttpContext.Request.Headers.Keys.Select(p => p.ToString()).ToList());
+            string headvalues=string.Join(',',HttpContext.Request.Headers.Values.Select(p=>p.ToString()).ToList());
+            return $"value:{id},head:[{heads}],value:[{headvalues}]";
         }
 
         // POST api/values
         [HttpPost]
-        public void Post([FromBody] string value)
+        public ActionResult<string> Post([FromBody] string value)
         {
+            return "Post Is Ok";
         }
 
         // PUT api/values/5
         [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        public ActionResult<string> Put(int id, [FromBody] string value)
         {
+            return "Put Is Ok";
         }
 
         // DELETE api/values/5
         [HttpDelete("{id}")]
-        public void Delete(int id)
+        public ActionResult<string> Delete(int id)
         {
+            return "Delete Is Ok";
         }
     }
 }
