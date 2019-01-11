@@ -33,6 +33,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyDoc", "MyDoc", "{99C93DFA
 		MyDoc\门店管理系统记录.docx = MyDoc\门店管理系统记录.docx
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNet", "WebNet\WebNet.csproj", "{723D87EB-619D-4383-95EC-19B0527F234A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +79,14 @@ Global
 		{F67D2D93-13AE-4A9E-B38A-F77903DB8220}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F67D2D93-13AE-4A9E-B38A-F77903DB8220}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F67D2D93-13AE-4A9E-B38A-F77903DB8220}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{723D87EB-619D-4383-95EC-19B0527F234A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{723D87EB-619D-4383-95EC-19B0527F234A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{723D87EB-619D-4383-95EC-19B0527F234A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{723D87EB-619D-4383-95EC-19B0527F234A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
