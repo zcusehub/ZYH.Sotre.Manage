@@ -1,0 +1,1 @@
+﻿Scaffold-DbContext -Force -Connection "Data Source=192.168.102.180;Initial Catalog=ZYH.manage;uid=sa;pwd=53372047;MultipleActiveResultSets=True;" -Provider  Microsoft.EntityFrameworkCore.SqlServer -OutputDir Models

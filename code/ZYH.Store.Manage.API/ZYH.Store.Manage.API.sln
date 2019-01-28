@@ -3,10 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.WebAPI", "ZYH.Store.Manage.WebAPI\ZYH.Store.Manage.WebAPI.csproj", "{3851D54A-D528-4AFB-B038-37BBE1F1E21A}"
-EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.Web", "ZYH.Store.Manage.Web\ZYH.Store.Manage.Web.csproj", "{C2032F90-2800-4EBE-BEC1-7091AA163EF8}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Store.Manage.Entity", "ZYH.Store.Manage.Entity\ZYH.Store.Manage.Entity.csproj", "{B964B629-8773-4798-BD0A-250ADDF6E726}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ZYH.Common", "ZYH.Common\ZYH.Common.csproj", "{A3ADD689-4861-45E1-913F-8398A741A7A9}"
@@ -33,10 +29,6 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MyDoc", "MyDoc", "{99C93DFA
 		MyDoc\门店管理系统记录.docx = MyDoc\门店管理系统记录.docx
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNet", "WebNet\WebNet.csproj", "{723D87EB-619D-4383-95EC-19B0527F234A}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestHangfire", "TestHangfire", "{2AB40B1E-95AA-4A7A-B1A4-B58B9CB877B7}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationHangfire", "TestHangfire\WebApplicationHangfire\WebApplicationHangfire.csproj", "{21429654-389F-428F-85F9-B92040AAE7F5}"
@@ -49,14 +41,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{3851D54A-D528-4AFB-B038-37BBE1F1E21A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{3851D54A-D528-4AFB-B038-37BBE1F1E21A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{3851D54A-D528-4AFB-B038-37BBE1F1E21A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{3851D54A-D528-4AFB-B038-37BBE1F1E21A}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C2032F90-2800-4EBE-BEC1-7091AA163EF8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2032F90-2800-4EBE-BEC1-7091AA163EF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2032F90-2800-4EBE-BEC1-7091AA163EF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2032F90-2800-4EBE-BEC1-7091AA163EF8}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B964B629-8773-4798-BD0A-250ADDF6E726}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B964B629-8773-4798-BD0A-250ADDF6E726}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B964B629-8773-4798-BD0A-250ADDF6E726}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -85,14 +69,6 @@ Global
 		{F67D2D93-13AE-4A9E-B38A-F77903DB8220}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F67D2D93-13AE-4A9E-B38A-F77903DB8220}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F67D2D93-13AE-4A9E-B38A-F77903DB8220}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C254D0C6-AF64-4B80-8B31-2BCB2F9035D0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{723D87EB-619D-4383-95EC-19B0527F234A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{723D87EB-619D-4383-95EC-19B0527F234A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{723D87EB-619D-4383-95EC-19B0527F234A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{723D87EB-619D-4383-95EC-19B0527F234A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{21429654-389F-428F-85F9-B92040AAE7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{21429654-389F-428F-85F9-B92040AAE7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{21429654-389F-428F-85F9-B92040AAE7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU

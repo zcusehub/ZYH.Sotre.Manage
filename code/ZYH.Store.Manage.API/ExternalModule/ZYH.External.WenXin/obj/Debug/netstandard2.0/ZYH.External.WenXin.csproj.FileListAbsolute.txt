@@ -1,0 +1,9 @@
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\bin\Debug\netstandard2.0\ZYH.External.WenXin.deps.json
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\bin\Debug\netstandard2.0\ZYH.External.WenXin.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\bin\Debug\netstandard2.0\ZYH.External.WenXin.pdb
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\obj\Debug\netstandard2.0\ZYH.External.WenXin.csprojAssemblyReference.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\obj\Debug\netstandard2.0\ZYH.External.WenXin.csproj.CoreCompileInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\obj\Debug\netstandard2.0\ZYH.External.WenXin.AssemblyInfoInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\obj\Debug\netstandard2.0\ZYH.External.WenXin.AssemblyInfo.cs
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\obj\Debug\netstandard2.0\ZYH.External.WenXin.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.WenXin\obj\Debug\netstandard2.0\ZYH.External.WenXin.pdb

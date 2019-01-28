@@ -1,0 +1,9 @@
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\bin\Debug\netstandard2.0\ZYH.External.MeiTuan.deps.json
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\bin\Debug\netstandard2.0\ZYH.External.MeiTuan.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\bin\Debug\netstandard2.0\ZYH.External.MeiTuan.pdb
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\obj\Debug\netstandard2.0\ZYH.External.MeiTuan.csprojAssemblyReference.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\obj\Debug\netstandard2.0\ZYH.External.MeiTuan.csproj.CoreCompileInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\obj\Debug\netstandard2.0\ZYH.External.MeiTuan.AssemblyInfoInputs.cache
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\obj\Debug\netstandard2.0\ZYH.External.MeiTuan.AssemblyInfo.cs
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\obj\Debug\netstandard2.0\ZYH.External.MeiTuan.dll
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.External.MeiTuan\obj\Debug\netstandard2.0\ZYH.External.MeiTuan.pdb
