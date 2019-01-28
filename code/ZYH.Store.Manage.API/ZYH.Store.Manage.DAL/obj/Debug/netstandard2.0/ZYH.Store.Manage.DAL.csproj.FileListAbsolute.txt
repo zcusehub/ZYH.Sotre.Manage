@@ -1,9 +1,0 @@
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\bin\Debug\netstandard2.0\ZYH.Store.Manage.DAL.deps.json
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\bin\Debug\netstandard2.0\ZYH.Store.Manage.DAL.dll
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\bin\Debug\netstandard2.0\ZYH.Store.Manage.DAL.pdb
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\obj\Debug\netstandard2.0\ZYH.Store.Manage.DAL.csproj.CoreCompileInputs.cache
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\obj\Debug\netstandard2.0\ZYH.Store.Manage.DAL.AssemblyInfoInputs.cache
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\obj\Debug\netstandard2.0\ZYH.Store.Manage.DAL.AssemblyInfo.cs
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\obj\Debug\netstandard2.0\ZYH.Store.Manage.DAL.dll
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\obj\Debug\netstandard2.0\ZYH.Store.Manage.DAL.pdb
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.DAL\obj\Debug\netstandard2.0\ZYH.Store.Manage.DAL.csprojAssemblyReference.cache
