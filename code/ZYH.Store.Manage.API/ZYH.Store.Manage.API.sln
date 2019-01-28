@@ -37,6 +37,12 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebNet", "WebNet\WebNet.csproj", "{723D87EB-619D-4383-95EC-19B0527F234A}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "TestHangfire", "TestHangfire", "{2AB40B1E-95AA-4A7A-B1A4-B58B9CB877B7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplicationHangfire", "TestHangfire\WebApplicationHangfire\WebApplicationHangfire.csproj", "{21429654-389F-428F-85F9-B92040AAE7F5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApplication1", "WebApplication1\WebApplication1.csproj", "{CEDF82CB-3172-42C0-9542-7059C33816E9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -87,6 +93,14 @@ Global
 		{723D87EB-619D-4383-95EC-19B0527F234A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{723D87EB-619D-4383-95EC-19B0527F234A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{723D87EB-619D-4383-95EC-19B0527F234A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{21429654-389F-428F-85F9-B92040AAE7F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{21429654-389F-428F-85F9-B92040AAE7F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{21429654-389F-428F-85F9-B92040AAE7F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{21429654-389F-428F-85F9-B92040AAE7F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CEDF82CB-3172-42C0-9542-7059C33816E9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEDF82CB-3172-42C0-9542-7059C33816E9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEDF82CB-3172-42C0-9542-7059C33816E9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEDF82CB-3172-42C0-9542-7059C33816E9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -94,6 +108,8 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{92ACF6AD-526E-4BF1-809F-051DC3B5B623} = {711544D7-9CD3-414D-8589-D21D932B7EBD}
 		{F67D2D93-13AE-4A9E-B38A-F77903DB8220} = {711544D7-9CD3-414D-8589-D21D932B7EBD}
+		{21429654-389F-428F-85F9-B92040AAE7F5} = {2AB40B1E-95AA-4A7A-B1A4-B58B9CB877B7}
+		{CEDF82CB-3172-42C0-9542-7059C33816E9} = {2AB40B1E-95AA-4A7A-B1A4-B58B9CB877B7}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9F4A815F-DFB6-45D5-941C-7B2279691C65}

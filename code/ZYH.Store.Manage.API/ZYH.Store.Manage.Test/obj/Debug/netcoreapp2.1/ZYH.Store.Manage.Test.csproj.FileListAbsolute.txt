@@ -8,3 +8,4 @@ E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debu
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.AssemblyInfo.cs
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.dll
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.pdb
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Test\obj\Debug\netcoreapp2.1\ZYH.Store.Manage.Test.csprojAssemblyReference.cache

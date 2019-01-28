@@ -1,8 +1,8 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2008                    */
-/* Created on:     2018/12/20 11:30:23                          */
+/* Created on:     2019/1/28 11:26:01                           */
 /*==============================================================*/
- 
+
 
 if exists (select 1
    from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
@@ -118,22 +118,22 @@ go
 
 if exists (select 1
    from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
-   where r.fkeyid = object_id('SalesProductItem') and o.name = 'FK_SALESPRO_REFERENCE_SALESPRO')
-alter table SalesProductItem
+   where r.fkeyid = object_id('Sales.SalesProductItem') and o.name = 'FK_SALESPRO_REFERENCE_SALESPRO')
+alter table Sales.SalesProductItem
    drop constraint FK_SALESPRO_REFERENCE_SALESPRO
 go
 
 if exists (select 1
    from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
-   where r.fkeyid = object_id('SalesProductItem') and o.name = 'FK_SALESPRO_REFERENCE_PRODUCT')
-alter table SalesProductItem
+   where r.fkeyid = object_id('Sales.SalesProductItem') and o.name = 'FK_SALESPRO_REFERENCE_PRODUCT')
+alter table Sales.SalesProductItem
    drop constraint FK_SALESPRO_REFERENCE_PRODUCT
 go
 
 if exists (select 1
    from sys.sysreferences r join sys.sysobjects o on (o.id = r.constid and o.type = 'F')
-   where r.fkeyid = object_id('SalesProductItem') and o.name = 'FK_SALESPRO_REFERENCE_MEASUREU')
-alter table SalesProductItem
+   where r.fkeyid = object_id('Sales.SalesProductItem') and o.name = 'FK_SALESPRO_REFERENCE_MEASUREU')
+alter table Sales.SalesProductItem
    drop constraint FK_SALESPRO_REFERENCE_MEASUREU
 go
 
@@ -166,15 +166,6 @@ alter table Inventory.WarehouseRegion
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('Organization.Department')
-            and   name  = 'IX_Department'
-            and   indid > 0
-            and   indid < 255)
-   drop index Organization.Department.IX_Department
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('Organization.Department')
             and   type = 'U')
@@ -196,28 +187,10 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('HR.Employee')
-            and   name  = 'IX_Employee'
-            and   indid > 0
-            and   indid < 255)
-   drop index HR.Employee.IX_Employee
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('HR.Employee')
             and   type = 'U')
    drop table HR.Employee
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('HR.EmployeeLogin')
-            and   name  = 'IX_Employee'
-            and   indid > 0
-            and   indid < 255)
-   drop index HR.EmployeeLogin.IX_Employee
 go
 
 if exists (select 1
@@ -260,15 +233,6 @@ if exists (select 1
            where  id = object_id('SysMange.MaterialInfo')
             and   type = 'U')
    drop table SysMange.MaterialInfo
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('SysMange.MaterialPackage')
-            and   name  = 'IX_MaterialPackage'
-            and   indid > 0
-            and   indid < 255)
-   drop index SysMange.MaterialPackage.IX_MaterialPackage
 go
 
 if exists (select 1
@@ -343,25 +307,16 @@ go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('SalesProduct')
+           where  id = object_id('Sales.SalesProduct')
             and   type = 'U')
-   drop table SalesProduct
+   drop table Sales.SalesProduct
 go
 
 if exists (select 1
             from  sysobjects
-           where  id = object_id('SalesProductItem')
+           where  id = object_id('Sales.SalesProductItem')
             and   type = 'U')
-   drop table SalesProductItem
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('Inventory.StockTaking')
-            and   name  = 'IX_WarehouseStock'
-            and   indid > 0
-            and   indid < 255)
-   drop index Inventory.StockTaking.IX_WarehouseStock
+   drop table Sales.SalesProductItem
 go
 
 if exists (select 1
@@ -369,15 +324,6 @@ if exists (select 1
            where  id = object_id('Inventory.StockTaking')
             and   type = 'U')
    drop table Inventory.StockTaking
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('Inventory.StockTakingItem')
-            and   name  = 'IX_WarehouseStock'
-            and   indid > 0
-            and   indid < 255)
-   drop index Inventory.StockTakingItem.IX_WarehouseStock
 go
 
 if exists (select 1
@@ -395,28 +341,10 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('HR.UserPosition')
-            and   name  = 'IX_UserPosition'
-            and   indid > 0
-            and   indid < 255)
-   drop index HR.UserPosition.IX_UserPosition
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('HR.UserPosition')
             and   type = 'U')
    drop table HR.UserPosition
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('Inventory.Warehouse')
-            and   name  = 'IX_Warehouse'
-            and   indid > 0
-            and   indid < 255)
-   drop index Inventory.Warehouse.IX_Warehouse
 go
 
 if exists (select 1
@@ -427,28 +355,10 @@ if exists (select 1
 go
 
 if exists (select 1
-            from  sysindexes
-           where  id    = object_id('Inventory.WarehouseInventory')
-            and   name  = 'IX_WarehouseStock'
-            and   indid > 0
-            and   indid < 255)
-   drop index Inventory.WarehouseInventory.IX_WarehouseStock
-go
-
-if exists (select 1
             from  sysobjects
            where  id = object_id('Inventory.WarehouseInventory')
             and   type = 'U')
    drop table Inventory.WarehouseInventory
-go
-
-if exists (select 1
-            from  sysindexes
-           where  id    = object_id('Inventory.WarehouseRegion')
-            and   name  = 'IX_WarehouseRegion'
-            and   indid > 0
-            and   indid < 255)
-   drop index Inventory.WarehouseRegion.IX_WarehouseRegion
 go
 
 if exists (select 1
@@ -566,9 +476,9 @@ go
 /* Table: Department                                            */
 /*==============================================================*/
 create table Organization.Department (
-   DepartmentGUID       char(36)             collate Chinese_PRC_CI_AS not null,
-   DepartmentName       varchar(20)          collate Chinese_PRC_CI_AS null,
-   ParentDepartmentGUID char(36)             collate Chinese_PRC_CI_AS null,
+   DepartmentGUID       char(36)             not null,
+   DepartmentName       varchar(20)          null,
+   ParentDepartmentGUID char(36)             null,
    DepartmentType       tinyint              null,
    Deleted              bit                  null,
    DepartmentCode       int                  identity,
@@ -738,27 +648,16 @@ execute sp_addextendedproperty 'MS_Description',
 go
 
 /*==============================================================*/
-/* Index: IX_Department                                         */
-/*==============================================================*/
-create index IX_Department on Organization.Department (
-Deleted ASC,
-DepartmentCode ASC,
-Enabled ASC,
-DepartmentName ASC
-)
-go
-
-/*==============================================================*/
 /* Table: DepartmentEmployee                                    */
 /*==============================================================*/
 create table Organization.DepartmentEmployee (
-   DepartmentEmployeeID char(36)             collate Chinese_PRC_CI_AS not null,
-   DepartmentGUID       char(36)             collate Chinese_PRC_CI_AS null,
+   DepartmentEmployeeID char(36)             not null,
+   DepartmentGUID       char(36)             null,
    DepartmentRoleGUID   char(36)             null,
-   RoleGUID             char(36)             collate Chinese_PRC_CI_AS null,
-   EmployeeID           varcahr(32)          null,
+   RoleGUID             char(36)             null,
+   EmployeeGUID         char(32)             null,
    Enabled              bit                  null,
-   constraint PK_DepartmentRole primary key nonclustered (DepartmentEmployeeID)
+   constraint PK_DEPARTMENTEMPLOYEE primary key (DepartmentEmployeeID)
 )
 go
 
@@ -842,18 +741,18 @@ go
 
 if exists(select 1 from sys.extended_properties p where
       p.major_id = object_id('Organization.DepartmentEmployee')
-  and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'EmployeeID')
+  and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'EmployeeGUID')
 )
 begin
    execute sp_dropextendedproperty 'MS_Description', 
-   'user', 'Organization', 'table', 'DepartmentEmployee', 'column', 'EmployeeID'
+   'user', 'Organization', 'table', 'DepartmentEmployee', 'column', 'EmployeeGUID'
 
 end
 
 
 execute sp_addextendedproperty 'MS_Description', 
-   '员工ID',
-   'user', 'Organization', 'table', 'DepartmentEmployee', 'column', 'EmployeeID'
+   '员工GUID',
+   'user', 'Organization', 'table', 'DepartmentEmployee', 'column', 'EmployeeGUID'
 go
 
 if exists(select 1 from sys.extended_properties p where
@@ -876,9 +775,9 @@ go
 /* Table: DepartmentRole                                        */
 /*==============================================================*/
 create table Organization.DepartmentRole (
-   DepartmentRoleGUID   char(36)             collate Chinese_PRC_CI_AS not null,
-   DepartmentGUID       char(36)             collate Chinese_PRC_CI_AS null,
-   RoleGUID             char(36)             collate Chinese_PRC_CI_AS null,
+   DepartmentRoleGUID   char(36)             not null,
+   DepartmentGUID       char(36)             null,
+   RoleGUID             char(36)             null,
    RoleName             varchar(32)          null,
    Enabled              bit                  null,
    constraint PK_DepartmentRole primary key nonclustered (DepartmentRoleGUID)
@@ -984,17 +883,17 @@ go
 /*==============================================================*/
 create table HR.Employee (
    EmployeeGUID         char(36)             not null,
-   EmployeeName         varchar(50)          collate Chinese_PRC_CI_AS not null,
-   IndexCode            varchar(10)          collate Chinese_PRC_CI_AS not null,
+   EmployeeName         varchar(50)          null,
+   IndexCode            varchar(10)          null,
    EmployeeCode         varchar(20)          null,
    Birthday             datetime             null,
    Gender               tinyint              null,
-   Address              varchar(150)         collate Chinese_PRC_CI_AS null,
+   Address              varchar(150)         null,
    IDCardNo             varchar(20)          null,
    InductionDate        datetime             null,
    FormalDate           datetime             null,
    LeaveDate            datetime             null,
-   Status               tinyint              not null,
+   Status               tinyint              null,
    DutyID               int                  null,
    PositionID           int                  null,
    Tel                  varchar(30)          null,
@@ -1257,34 +1156,18 @@ execute sp_addextendedproperty 'MS_Description',
 go
 
 /*==============================================================*/
-/* Index: IX_Employee                                           */
-/*==============================================================*/
-create index IX_Employee on HR.Employee (
-EmployeeName ASC,
-IndexCode ASC,
-Birthday ASC,
-Gender ASC,
-EmployeeCode ASC,
-InductionDate ASC,
-FormalDate ASC,
-LeaveDate ASC,
-Status ASC
-)
-go
-
-/*==============================================================*/
 /* Table: EmployeeLogin                                         */
 /*==============================================================*/
 create table HR.EmployeeLogin (
    EmployeeLoginID      int                  identity,
    EmployeeGUID         char(36)             null,
-   UserName             varchar(50)          collate Chinese_PRC_CI_AS not null,
-   Pwd                  varchar(50)          collate Chinese_PRC_CI_AS not null,
+   UserName             varchar(50)          null,
+   Pwd                  varchar(50)          null,
    Phone                varchar(11)          null,
    LoginCount           int                  null,
-   LastTime             datetime             collate Chinese_PRC_CI_AS null,
+   LastTime             datetime             null,
    Enable               bit                  null,
-   Deleted              bit                  not null,
+   Deleted              bit                  null,
    constraint PK_EMPLOYEELOGIN primary key nonclustered (EmployeeLoginID)
 )
 go
@@ -1445,19 +1328,6 @@ end
 execute sp_addextendedproperty 'MS_Description', 
    '所在部门',
    'user', 'HR', 'table', 'EmployeeLogin', 'column', 'Deleted'
-go
-
-/*==============================================================*/
-/* Index: IX_Employee                                           */
-/*==============================================================*/
-create index IX_Employee on HR.EmployeeLogin (
-UserName ASC,
-Pwd ASC,
-Phone ASC,
-LoginCount ASC,
-EmployeeGUID ASC,
-Deleted ASC
-)
 go
 
 /*==============================================================*/
@@ -2435,14 +2305,6 @@ execute sp_addextendedproperty 'MS_Description',
 go
 
 /*==============================================================*/
-/* Index: IX_MaterialPackage                                    */
-/*==============================================================*/
-create index IX_MaterialPackage on SysMange.MaterialPackage (
-MaterialID ASC
-)
-go
-
-/*==============================================================*/
 /* Table: MaterialTypes                                         */
 /*==============================================================*/
 create table SysMange.MaterialTypes (
@@ -2818,12 +2680,12 @@ go
 /* Table: MenuRole                                              */
 /*==============================================================*/
 create table Organization.MenuRole (
-   MenuRoleID           char(36)             collate Chinese_PRC_CI_AS not null,
-   ModuleRoleID         char(36)             collate Chinese_PRC_CI_AS null,
+   MenuRoleID           char(36)             not null,
+   ModuleRoleID         char(36)             null,
    ModuleID             int                  null,
    MenuParentID         int                  null,
    authority            int                  null,
-   constraint PK_DepartmentRole primary key nonclustered (MenuRoleID)
+   constraint PK_MENUROLE primary key (MenuRoleID)
 )
 go
 
@@ -2869,7 +2731,7 @@ end
 
 
 execute sp_addextendedproperty 'MS_Description', 
-   '部门标识',
+   '部门角色标识',
    'user', 'Organization', 'table', 'MenuRole', 'column', 'ModuleRoleID'
 go
 
@@ -3066,11 +2928,11 @@ go
 /* Table: ModuleRole                                            */
 /*==============================================================*/
 create table Organization.ModuleRole (
-   ModuleRoleID         char(36)             collate Chinese_PRC_CI_AS not null,
-   DepartmentRoleGUID   char(36)             collate Chinese_PRC_CI_AS null,
-   ModuleID             int                  collate Chinese_PRC_CI_AS null,
+   ModuleRoleID         char(36)             not null,
+   DepartmentRoleGUID   char(36)             null,
+   ModuleID             int                  null,
    IsEnable             bit                  null,
-   constraint PK_DepartmentRole primary key nonclustered (ModuleRoleID)
+   constraint PK_MODULEROLE primary key (ModuleRoleID)
 )
 go
 
@@ -3161,7 +3023,7 @@ create table Sales.Product (
    ProductType          int                  null,
    ProductURL           varchar(128)         null,
    Remark               varchar(256)         null,
-   CreateTime           datatime             null,
+   CreateTime           datetime             null,
    CostPrice            money                null,
    SalePrice            money                null,
    MeasureUnitID        int                  null,
@@ -3356,11 +3218,11 @@ create table Procurement.Purchase (
    Contact              varchar(64)          null,
    RoadPrice            decimal(18)          null,
    Remark               text                 null,
-   RecordTime           datatime             null,
+   RecordTime           datetime             null,
    Status               int                  null,
-   CreateTime           datatime             null,
-   ApplyTime            datatime             null,
-   PlanTime             datatime             null,
+   CreateTime           datetime             null,
+   ApplyTime            datetime             null,
+   PlanTime             datetime             null,
    constraint PK_PURCHASE primary key (PurchaseID)
 )
 go
@@ -3765,10 +3627,10 @@ go
 /*==============================================================*/
 /* Table: SalesProduct                                          */
 /*==============================================================*/
-create table SalesProduct (
+create table Sales.SalesProduct (
    SalesProductID       int                  identity,
    SalesProductCode     varchar(32)          null,
-   SaleTime             datatime             null,
+   SaleTime             datetime             null,
    PersonCount          int                  null,
    Amount               money                null,
    Discount             decimal              null,
@@ -3779,178 +3641,151 @@ create table SalesProduct (
 go
 
 if exists (select 1 from  sys.extended_properties
-           where major_id = object_id('SalesProduct') and minor_id = 0)
+           where major_id = object_id('Sales.SalesProduct') and minor_id = 0)
 begin 
-   declare @CurrentUser sysname 
-select @CurrentUser = user_name() 
-execute sp_dropextendedproperty 'MS_Description',  
-   'user', @CurrentUser, 'table', 'SalesProduct' 
+   execute sp_dropextendedproperty 'MS_Description',  
+   'user', 'Sales', 'table', 'SalesProduct' 
  
 end 
 
 
-select @CurrentUser = user_name() 
 execute sp_addextendedproperty 'MS_Description',  
    '销售管理.日常业务.产品销售', 
-   'user', @CurrentUser, 'table', 'SalesProduct'
+   'user', 'Sales', 'table', 'SalesProduct'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProduct')
+      p.major_id = object_id('Sales.SalesProduct')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'SalesProductID')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'SalesProductID'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'SalesProductID'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '产品销售ID',
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'SalesProductID'
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'SalesProductID'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProduct')
+      p.major_id = object_id('Sales.SalesProduct')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'SalesProductCode')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'SalesProductCode'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'SalesProductCode'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '账单编码',
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'SalesProductCode'
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'SalesProductCode'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProduct')
+      p.major_id = object_id('Sales.SalesProduct')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'SaleTime')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'SaleTime'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'SaleTime'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '销售日期',
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'SaleTime'
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'SaleTime'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProduct')
+      p.major_id = object_id('Sales.SalesProduct')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'PersonCount')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'PersonCount'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'PersonCount'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '账单人数',
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'PersonCount'
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'PersonCount'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProduct')
+      p.major_id = object_id('Sales.SalesProduct')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'Amount')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'Amount'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'Amount'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '账单金额',
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'Amount'
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'Amount'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProduct')
+      p.major_id = object_id('Sales.SalesProduct')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'Discount')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'Discount'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'Discount'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '账单折扣',
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'Discount'
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'Discount'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProduct')
+      p.major_id = object_id('Sales.SalesProduct')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'DiscountAmount')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'DiscountAmount'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'DiscountAmount'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '账单折扣后金额',
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'DiscountAmount'
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'DiscountAmount'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProduct')
+      p.major_id = object_id('Sales.SalesProduct')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'ConsumerCode')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'ConsumerCode'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'ConsumerCode'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '消费者编码，用来关联消费者的（如：注册了会员，或线上支付等）',
-   'user', @CurrentUser, 'table', 'SalesProduct', 'column', 'ConsumerCode'
+   'user', 'Sales', 'table', 'SalesProduct', 'column', 'ConsumerCode'
 go
 
 /*==============================================================*/
 /* Table: SalesProductItem                                      */
 /*==============================================================*/
-create table SalesProductItem (
+create table Sales.SalesProductItem (
    SalesProductItemID   int                  identity,
    SalesProductID       int                  null,
    ProductID            int                  null,
@@ -3964,172 +3799,145 @@ create table SalesProductItem (
 go
 
 if exists (select 1 from  sys.extended_properties
-           where major_id = object_id('SalesProductItem') and minor_id = 0)
+           where major_id = object_id('Sales.SalesProductItem') and minor_id = 0)
 begin 
-   declare @CurrentUser sysname 
-select @CurrentUser = user_name() 
-execute sp_dropextendedproperty 'MS_Description',  
-   'user', @CurrentUser, 'table', 'SalesProductItem' 
+   execute sp_dropextendedproperty 'MS_Description',  
+   'user', 'Sales', 'table', 'SalesProductItem' 
  
 end 
 
 
-select @CurrentUser = user_name() 
 execute sp_addextendedproperty 'MS_Description',  
    '销售管理.日常业务.产品销售明细', 
-   'user', @CurrentUser, 'table', 'SalesProductItem'
+   'user', 'Sales', 'table', 'SalesProductItem'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProductItem')
+      p.major_id = object_id('Sales.SalesProductItem')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'SalesProductItemID')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'SalesProductItemID'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'SalesProductItemID'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    'SalesProductItemID',
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'SalesProductItemID'
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'SalesProductItemID'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProductItem')
+      p.major_id = object_id('Sales.SalesProductItem')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'SalesProductID')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'SalesProductID'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'SalesProductID'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '产品销售ID',
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'SalesProductID'
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'SalesProductID'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProductItem')
+      p.major_id = object_id('Sales.SalesProductItem')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'ProductID')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'ProductID'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'ProductID'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '产品管理ID',
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'ProductID'
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'ProductID'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProductItem')
+      p.major_id = object_id('Sales.SalesProductItem')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'SaleCount')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'SaleCount'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'SaleCount'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '数量',
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'SaleCount'
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'SaleCount'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProductItem')
+      p.major_id = object_id('Sales.SalesProductItem')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'MeasureUnitID')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'MeasureUnitID'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'MeasureUnitID'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '计量单位ID',
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'MeasureUnitID'
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'MeasureUnitID'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProductItem')
+      p.major_id = object_id('Sales.SalesProductItem')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'Amount')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'Amount'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'Amount'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '理论金额',
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'Amount'
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'Amount'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProductItem')
+      p.major_id = object_id('Sales.SalesProductItem')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'DiscountAmount')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'DiscountAmount'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'DiscountAmount'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '实际金额',
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'DiscountAmount'
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'DiscountAmount'
 go
 
 if exists(select 1 from sys.extended_properties p where
-      p.major_id = object_id('SalesProductItem')
+      p.major_id = object_id('Sales.SalesProductItem')
   and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'Discount')
 )
 begin
-   declare @CurrentUser sysname
-select @CurrentUser = user_name()
-execute sp_dropextendedproperty 'MS_Description', 
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'Discount'
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'Discount'
 
 end
 
 
-select @CurrentUser = user_name()
 execute sp_addextendedproperty 'MS_Description', 
    '折扣',
-   'user', @CurrentUser, 'table', 'SalesProductItem', 'column', 'Discount'
+   'user', 'Sales', 'table', 'SalesProductItem', 'column', 'Discount'
 go
 
 /*==============================================================*/
@@ -4274,16 +4082,6 @@ execute sp_addextendedproperty 'MS_Description',
 go
 
 /*==============================================================*/
-/* Index: IX_WarehouseStock                                     */
-/*==============================================================*/
-create index IX_WarehouseStock on Inventory.StockTaking (
-CreateTime ASC,
-EmployeeGUID ASC,
-ApplyTime ASC
-)
-go
-
-/*==============================================================*/
 /* Table: StockTakingItem                                       */
 /*==============================================================*/
 create table Inventory.StockTakingItem (
@@ -4422,14 +4220,6 @@ end
 execute sp_addextendedproperty 'MS_Description', 
    '当前库存',
    'user', 'Inventory', 'table', 'StockTakingItem', 'column', 'OldInventory'
-go
-
-/*==============================================================*/
-/* Index: IX_WarehouseStock                                     */
-/*==============================================================*/
-create index IX_WarehouseStock on Inventory.StockTakingItem (
-MaterialID ASC
-)
 go
 
 /*==============================================================*/
@@ -4749,30 +4539,18 @@ execute sp_addextendedproperty 'MS_Description',
 go
 
 /*==============================================================*/
-/* Index: IX_UserPosition                                       */
-/*==============================================================*/
-create index IX_UserPosition on HR.UserPosition (
-IndexCode ASC,
-IsDirector ASC,
-Enabled ASC,
-Deleted ASC,
-PositionName ASC
-)
-go
-
-/*==============================================================*/
 /* Table: Warehouse                                             */
 /*==============================================================*/
 create table Inventory.Warehouse (
    WarehouseID          int                  identity,
    WarehouseCode        varchar(20)          not null,
    WarehouseTypeID      int                  not null,
-   WarehouseName        varchar(50)          collate Chinese_PRC_CI_AS not null,
+   WarehouseName        varchar(50)          not null,
    IndexCode            varchar(20)          not null,
    DistrictID           int                  not null,
    Address              varchar(200)         null,
    DepartmentGUID       char(36)             null,
-   Remark               varchar(500)         collate Chinese_PRC_CI_AS null,
+   Remark               varchar(500)         null,
    Enabled              bit                  not null default 1,
    Deleted              bit                  not null default 0,
    Locked               bit                  not null,
@@ -4987,21 +4765,6 @@ execute sp_addextendedproperty 'MS_Description',
 go
 
 /*==============================================================*/
-/* Index: IX_Warehouse                                          */
-/*==============================================================*/
-create index IX_Warehouse on Inventory.Warehouse (
-WarehouseTypeID ASC,
-IndexCode ASC,
-Enabled ASC,
-Deleted ASC,
-WarehouseName ASC,
-DistrictID ASC,
-WarehouseCode ASC,
-DepartmentGUID ASC
-)
-go
-
-/*==============================================================*/
 /* Table: WarehouseInventory                                    */
 /*==============================================================*/
 create table Inventory.WarehouseInventory (
@@ -5143,15 +4906,6 @@ execute sp_addextendedproperty 'MS_Description',
 go
 
 /*==============================================================*/
-/* Index: IX_WarehouseStock                                     */
-/*==============================================================*/
-create index IX_WarehouseStock on Inventory.WarehouseInventory (
-WarehouseRegionID ASC,
-MaterialID ASC
-)
-go
-
-/*==============================================================*/
 /* Table: WarehouseRegion                                       */
 /*==============================================================*/
 create table Inventory.WarehouseRegion (
@@ -5258,16 +5012,6 @@ execute sp_addextendedproperty 'MS_Description',
    'user', 'Inventory', 'table', 'WarehouseRegion', 'column', 'Remark'
 go
 
-/*==============================================================*/
-/* Index: IX_WarehouseRegion                                    */
-/*==============================================================*/
-create index IX_WarehouseRegion on Inventory.WarehouseRegion (
-WarehouseID ASC,
-RegionName ASC,
-Deleted ASC
-)
-go
-
 alter table Organization.DepartmentEmployee
    add constraint FK_DEPARTME_REFERENCE_DEPARTME foreign key (DepartmentGUID)
       references Organization.Department (DepartmentGUID)
@@ -5348,17 +5092,17 @@ alter table Procurement.PurchaseItems
       references SysMange.Supplier (SupplierID)
 go
 
-alter table SalesProductItem
+alter table Sales.SalesProductItem
    add constraint FK_SALESPRO_REFERENCE_SALESPRO foreign key (SalesProductID)
-      references SalesProduct (SalesProductID)
+      references Sales.SalesProduct (SalesProductID)
 go
 
-alter table SalesProductItem
+alter table Sales.SalesProductItem
    add constraint FK_SALESPRO_REFERENCE_PRODUCT foreign key (ProductID)
       references Sales.Product (ProductID)
 go
 
-alter table SalesProductItem
+alter table Sales.SalesProductItem
    add constraint FK_SALESPRO_REFERENCE_MEASUREU foreign key (MeasureUnitID)
       references SysMange.MeasureUnit (MeasureUnitID)
 go

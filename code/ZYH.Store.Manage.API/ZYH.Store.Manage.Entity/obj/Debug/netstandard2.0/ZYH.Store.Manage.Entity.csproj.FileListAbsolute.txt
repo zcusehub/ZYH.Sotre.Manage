@@ -1,9 +1,9 @@
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\bin\Debug\netstandard2.0\ZYH.Store.Manage.Entity.deps.json
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\bin\Debug\netstandard2.0\ZYH.Store.Manage.Entity.dll
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\bin\Debug\netstandard2.0\ZYH.Store.Manage.Entity.pdb
-E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\obj\Debug\netstandard2.0\ZYH.Store.Manage.Entity.csprojAssemblyReference.cache
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\obj\Debug\netstandard2.0\ZYH.Store.Manage.Entity.csproj.CoreCompileInputs.cache
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\obj\Debug\netstandard2.0\ZYH.Store.Manage.Entity.AssemblyInfoInputs.cache
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\obj\Debug\netstandard2.0\ZYH.Store.Manage.Entity.AssemblyInfo.cs
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\obj\Debug\netstandard2.0\ZYH.Store.Manage.Entity.dll
 E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\obj\Debug\netstandard2.0\ZYH.Store.Manage.Entity.pdb
+E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\ZYH.Store.Manage.Entity\obj\Debug\netstandard2.0\ZYH.Store.Manage.Entity.csprojAssemblyReference.cache
