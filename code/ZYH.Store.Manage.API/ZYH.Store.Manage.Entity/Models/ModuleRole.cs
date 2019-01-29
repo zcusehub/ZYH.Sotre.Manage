@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace ZYH.Store.Manage.Entity.Models
 {
+    /// <summary>
+    /// 人力资源.组织架构.角色模块权限
+    /// </summary>
     public partial class ModuleRole
     {
         public ModuleRole()

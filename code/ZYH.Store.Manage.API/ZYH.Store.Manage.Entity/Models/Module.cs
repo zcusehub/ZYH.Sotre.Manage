@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace ZYH.Store.Manage.Entity.Models
 {
+    /// <summary>
+    /// 系统管理.菜单管理.模块
+    /// </summary>
     public partial class Module
     {
         public Module()

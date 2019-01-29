@@ -3,6 +3,9 @@ using System.Collections.Generic;
 
 namespace ZYH.Store.Manage.Entity.Models
 {
+    /// <summary>
+    /// 人力资源.人事管理.员工 登录
+    /// </summary>
     public partial class EmployeeLogin
     {
         public int EmployeeLoginId { get; set; }
