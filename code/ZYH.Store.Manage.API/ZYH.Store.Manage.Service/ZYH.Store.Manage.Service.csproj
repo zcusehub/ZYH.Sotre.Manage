@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Interface\Analysis\" />
+    <Folder Include="Interface\Finace\" />
+    <Folder Include="Interface\Procurement\" />
+    <Folder Include="Interface\Sales\" />
+    <Folder Include="Interface\SysMange\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZYH.Store.Manage.Entity\ZYH.Store.Manage.Entity.csproj" />
+  </ItemGroup>
+
+</Project>

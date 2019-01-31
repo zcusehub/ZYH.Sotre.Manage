@@ -1,0 +1,38 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Controllers\Finace\" />
+    <Folder Include="Controllers\HR\" />
+    <Folder Include="Controllers\Inventory\" />
+    <Folder Include="Controllers\Analysis\" />
+    <Folder Include="Controllers\Procurement\" />
+    <Folder Include="Controllers\Sales\" />
+    <Folder Include="Controllers\SysMange\" />
+    <Folder Include="wwwroot\" />
+  </ItemGroup>
+ 
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.1" />
+  </ItemGroup>
+ 
+
+  <ItemGroup>
+    <ProjectReference Include="..\ZYH.Common\ZYH.Common.csproj" />
+    <ProjectReference Include="..\ZYH.Store.Manage.Entity\ZYH.Store.Manage.Entity.csproj" />
+    <ProjectReference Include="..\ZYH.Store.Manage.Service\ZYH.Store.Manage.Service.csproj" />
+  </ItemGroup>
+ 
+
+  <ItemGroup>
+    <Content Update="appsettings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZYH.Common\ZYH.Common.csproj" />
+    <ProjectReference Include="..\..\ZYH.Store.Manage.Service\ZYH.Store.Manage.Service.csproj" />
+  </ItemGroup>
+
+</Project>
