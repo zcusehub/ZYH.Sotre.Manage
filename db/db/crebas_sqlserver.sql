@@ -1,6 +1,6 @@
 /*==============================================================*/
 /* DBMS name:      Microsoft SQL Server 2008                    */
-/* Created on:     2019/1/28 11:26:01                           */
+/* Created on:     2019/1/30 16:55:02                           */
 /*==============================================================*/
 
 
@@ -481,7 +481,7 @@ create table Organization.Department (
    ParentDepartmentGUID char(36)             null,
    DepartmentType       tinyint              null,
    Deleted              bit                  null,
-   DepartmentCode       int                  identity,
+   DepartmentCode       int                  null,
    DepartmentTel        varchar(50)          null,
    Remark               varchar(500)         null,
    Enabled              bit                  null default 1,
@@ -2685,6 +2685,7 @@ create table Organization.MenuRole (
    ModuleID             int                  null,
    MenuParentID         int                  null,
    authority            int                  null,
+   MenuID               int                  null,
    constraint PK_MENUROLE primary key (MenuRoleID)
 )
 go
@@ -2781,6 +2782,22 @@ end
 execute sp_addextendedproperty 'MS_Description', 
    '1:read 2:update 4:delete',
    'user', 'Organization', 'table', 'MenuRole', 'column', 'authority'
+go
+
+if exists(select 1 from sys.extended_properties p where
+      p.major_id = object_id('Organization.MenuRole')
+  and p.minor_id = (select c.column_id from sys.columns c where c.object_id = p.major_id and c.name = 'MenuID')
+)
+begin
+   execute sp_dropextendedproperty 'MS_Description', 
+   'user', 'Organization', 'table', 'MenuRole', 'column', 'MenuID'
+
+end
+
+
+execute sp_addextendedproperty 'MS_Description', 
+   '²Ëµ¥½ÚµãID',
+   'user', 'Organization', 'table', 'MenuRole', 'column', 'MenuID'
 go
 
 /*==============================================================*/

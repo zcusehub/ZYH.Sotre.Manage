@@ -43,6 +43,15 @@ namespace ZYH.Common
         {
             return configurationRoot[key];
         }
+        /// <summary>
+        /// 获取配置文件Section
+        /// </summary>
+        /// <param name="key"></param>
+        /// <returns></returns>
+        public IConfigurationSection GetSection(string key)
+        {
+            return configurationRoot.GetSection(key);
+        }
     }
 
 }
