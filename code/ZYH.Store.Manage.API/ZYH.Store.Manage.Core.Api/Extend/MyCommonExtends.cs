@@ -44,7 +44,12 @@ namespace ZYH.Store.Manage.Core.Api.Extend
 
             return services;
         }
-
+        /// <summary>
+        /// 扩展注册服务（继承了接口IBaseBussiness）
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="dllPath"></param>
+        /// <returns></returns>
         public static IServiceCollection RegisterServices(this IServiceCollection services, string dllPath)
         {
             var ass = Assembly.LoadFrom(dllPath);

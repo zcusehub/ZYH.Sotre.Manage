@@ -9,4 +9,8 @@
     <ProjectReference Include="..\..\ZYH.Store.Manage.Service\ZYH.Store.Manage.Service.csproj" />
   </ItemGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="Copy  &quot;$(ProjectDir)$(OutDir)$(ProjectName).dll&quot;  &quot;$(SolutionDir)BIN\netcoreapp2.1\Services&quot;" />
+  </Target>
+
 </Project>

@@ -35,7 +35,7 @@ namespace ZYH.Store.Manage.Entity.Models
         }
         #endregion
 
-        public virtual DbSet<Department> Department { get; set; }
+        public virtual DbSet<Department> Department { get; set; } 
         public virtual DbSet<DepartmentEmployee> DepartmentEmployee { get; set; }
         public virtual DbSet<DepartmentRole> DepartmentRole { get; set; }
         public virtual DbSet<Employee> Employee { get; set; }
@@ -70,53 +70,53 @@ namespace ZYH.Store.Manage.Entity.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-                optionsBuilder.UseSqlServer(connStr);
+                optionsBuilder.UseSqlServer(connStr, p => p.UseRowNumberForPaging());
             }
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
-        {
+        { 
             modelBuilder.Entity<Department>(entity =>
             {
                 entity.ToTable("Department", "Organization");
                 entity.HasKey(e => e.DepartmentGuid);
-            });
 
+            });
             modelBuilder.Entity<DepartmentEmployee>(entity =>
-            {
-                entity.ToTable("DepartmentEmployee", "Organization");
+        {
+            entity.ToTable("DepartmentEmployee", "Organization");
 
-                entity.Property(e => e.DepartmentEmployeeId)
-                    .HasColumnName("DepartmentEmployeeID")
-                    .HasMaxLength(36)
-                    .IsUnicode(false)
-                    .ValueGeneratedNever();
+            entity.Property(e => e.DepartmentEmployeeId)
+                .HasColumnName("DepartmentEmployeeID")
+                .HasMaxLength(36)
+                .IsUnicode(false)
+                .ValueGeneratedNever();
 
-                entity.Property(e => e.DepartmentGuid)
-                    .HasColumnName("DepartmentGUID")
-                    .HasMaxLength(36)
-                    .IsUnicode(false);
+            entity.Property(e => e.DepartmentGuid)
+                .HasColumnName("DepartmentGUID")
+                .HasMaxLength(36)
+                .IsUnicode(false);
 
-                entity.Property(e => e.DepartmentRoleGuid)
-                    .HasColumnName("DepartmentRoleGUID")
-                    .HasMaxLength(36)
-                    .IsUnicode(false);
+            entity.Property(e => e.DepartmentRoleGuid)
+                .HasColumnName("DepartmentRoleGUID")
+                .HasMaxLength(36)
+                .IsUnicode(false);
 
-                entity.Property(e => e.EmployeeGuid)
-                    .HasColumnName("EmployeeGUID")
-                    .HasMaxLength(32)
-                    .IsUnicode(false);
+            entity.Property(e => e.EmployeeGuid)
+                .HasColumnName("EmployeeGUID")
+                .HasMaxLength(32)
+                .IsUnicode(false);
 
-                entity.Property(e => e.RoleGuid)
-                    .HasColumnName("RoleGUID")
-                    .HasMaxLength(36)
-                    .IsUnicode(false);
+            entity.Property(e => e.RoleGuid)
+                .HasColumnName("RoleGUID")
+                .HasMaxLength(36)
+                .IsUnicode(false);
 
-                entity.HasOne(d => d.DepartmentGu)
-                    .WithMany(p => p.DepartmentEmployee)
-                    .HasForeignKey(d => d.DepartmentGuid)
-                    .HasConstraintName("FK_DEPARTME_REFERENCE_DEPARTME");
-            });
+            entity.HasOne(d => d.DepartmentGu)
+                .WithMany(p => p.DepartmentEmployee)
+                .HasForeignKey(d => d.DepartmentGuid)
+                .HasConstraintName("FK_DEPARTME_REFERENCE_DEPARTME");
+        });
 
             modelBuilder.Entity<DepartmentRole>(entity =>
             {

@@ -4,9 +4,12 @@
     <TargetFramework>netcoreapp2.1</TargetFramework>
   </PropertyGroup>
 
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <OutputPath>E:\zyh\ZYH.Sotre.Manage\code\ZYH.Store.Manage.API\BIN\</OutputPath>
+  </PropertyGroup>
+
   <ItemGroup>
     <Folder Include="Controllers\Finace\" />
-    <Folder Include="Controllers\HR\" />
     <Folder Include="Controllers\Inventory\" />
     <Folder Include="Controllers\Analysis\" />
     <Folder Include="Controllers\Procurement\" />

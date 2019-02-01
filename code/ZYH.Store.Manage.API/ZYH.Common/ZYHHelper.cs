@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Text;
+using System.Text.RegularExpressions;
 
 namespace ZYH.Common
 {
@@ -17,5 +18,14 @@ namespace ZYH.Common
             throw excepetion;
         }
 
+        /// <summary>
+        /// 获取GUID不带 - 的字符串
+        /// </summary>
+        /// <returns></returns>
+        public static string GetGUIDStr()
+        {
+            var str = Guid.NewGuid().ToString();
+            return Regex.Replace(str,"-","");
+        }
     }
 }

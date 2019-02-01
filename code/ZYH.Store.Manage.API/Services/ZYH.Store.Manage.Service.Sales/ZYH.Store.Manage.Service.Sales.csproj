@@ -4,4 +4,8 @@
     <TargetFramework>netstandard2.0</TargetFramework>
   </PropertyGroup>
 
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="Copy  &quot;$(ProjectDir)$(OutDir)$(ProjectName).dll&quot;  &quot;$(SolutionDir)BIN\netcoreapp2.1\Services&quot;" />
+  </Target>
+
 </Project>
